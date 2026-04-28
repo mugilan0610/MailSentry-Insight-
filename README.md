@@ -7,7 +7,10 @@ MailSentry Insight™ is a powerful email intelligence system that connects to a
 
 ## 🚀 Features
 
-- 🔐 Secure Gmail Integration (IMAP + App Password)
+- **[NEW]** 🔐 Secure Login & Session Management (IMAP Authentication)
+- **[NEW]** 📅 Dynamic Date Range Filtering
+- **[NEW]** 🧭 Tabbed Navigation (Dashboard Overview vs Detailed Analysis)
+- **[NEW]** ✨ Interactive UI Animations
 - 📥 Bulk Email Processing (Scalable for 500+ emails)
 - 🧠 Smart Email Classification
   - Sales Lead
@@ -25,10 +28,11 @@ MailSentry Insight™ is a powerful email intelligence system that connects to a
   - Order IDs
 - 📊 Interactive Analytics Dashboard
   - Category Distribution (Pie Chart)
-  - Email Frequency (Bar Chart)
+  - Email Frequency (Histogram)
+  - Emails Over Time (Line Graph)
   - Summary Table
 - 📁 CSV Export for Reporting
-- 🎨 Modern UI Dashboard (Glassmorphism Design)
+- 🎨 Modern UI Dashboard (Glassmorphism Design with Transparent Charts)
 
 
 
