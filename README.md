@@ -79,17 +79,23 @@ Analytics Dashboard (Streamlit)
 * Dashboard with analytics
 
 ---
-<img width="1366" height="649" alt="1st " src="https://github.com/user-attachments/assets/07bb6d34-4a99-48bd-9447-930f4446efe6" />
+<img width="1366" height="2040" alt="Dashbord" src="https://github.com/user-attachments/assets/e49ad7b3-2131-45e4-8ae8-76e78970ff39" />
+
 
 ---
-<img width="1366" height="768" alt="Screenshot 2026-04-28 023810" src="https://github.com/user-attachments/assets/5b68fd17-73ca-47e1-92aa-b4a9f190a01c" />
+<img width="1366" height="1538" alt="detiled view" src="https://github.com/user-attachments/assets/2a81d5da-d156-4506-ac1d-3f998a7c6bb6" />
+
 
 ---
 * Email classification results
 * Structured extracted data
 * Downloadable CSV report
 
-https://github.com/user-attachments/assets/bc5ef641-6c2f-4145-91bc-8d8c3df41f6e
+
+
+https://github.com/user-attachments/assets/e90cde2f-0899-4388-9a82-4ca77c32c43e
+
+
 
 ---
 
