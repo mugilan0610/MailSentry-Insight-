@@ -27,8 +27,8 @@ def connect_and_fetch(email_user: str, app_password: str, limit: int = 10) -> li
         # Get list of email IDs
         email_ids = messages[0].split()
         
-        # Fetch latest 'limit' emails
-        latest_ids = email_ids[-limit:]
+        # Fetch latest 'limit' emails and reverse to show most recent first
+        latest_ids = email_ids[-limit:][::-1]
         
         for e_id in latest_ids:
             status, msg_data = mail.fetch(e_id, "(RFC822)")
@@ -40,16 +40,24 @@ def connect_and_fetch(email_user: str, app_password: str, limit: int = 10) -> li
                     msg = email.message_from_bytes(response_part[1])
                     
                     # Parse subject
-                    subject, encoding = decode_header(msg["Subject"])[0]
+                    subject, encoding = decode_header(msg.get("Subject", "No Subject"))[0]
                     if isinstance(subject, bytes):
-                        subject = subject.decode(encoding if encoding else "utf-8", errors="ignore")
+                        subject = subject.decode(encoding if encoding else "utf-8", errors="replace")
                     elif subject is None:
                         subject = ""
                     else:
                         subject = str(subject)
                     
-                    sender = msg.get("From", "")
-                    date = msg.get("Date", "")
+                    
+                    sender, encoding = decode_header(msg.get("From", "Unknown"))[0]
+                    if isinstance(sender, bytes):
+                        sender = sender.decode(encoding if encoding else "utf-8", errors="replace")
+                    elif sender is None:
+                        sender = "Unknown"
+                    else:
+                        sender = str(sender)
+                        
+                    date = msg.get("Date", "Unknown")
                     
                     # Get email body
                     body = ""
